@@ -1,0 +1,19 @@
+A JavaBean is still a POJO but introduces a strict set of rules around how we implement it:
+
+Access levels – our properties are private and we expose getters and setters
+Method names – our getters and setters follow the getX and setX convention (in the case of a boolean, isX can be used for a getter)
+Default Constructor – a no-argument constructor must be present so an instance can be created without providing arguments, for example during deserialization
+Serializable – implementing the Serializable interface allows us to store the state
+
+
+https://www.baeldung.com/java-pojo-class
+
+
+    	//tightly coupled
+//       Action ac = new Ram();
+//       ac.eat();
+//       ac.sleep();
+//       
+//       Shyam s = new Shyam();
+//       s.eat();
+//       s.sleep();
