@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="Constructoeinjection.Student" name="st">
+	<constructor-arg value="1" type="int"/>
+	<constructor-arg value="Kunal"/>
+	</bean>
+	
+	<bean class="Constructoeinjection.Student" name="st1">
+	<constructor-arg value="1" index="0"/>
+	<constructor-arg value="Kunal" index="1"/>
+	</bean>
+	
+<!-- 	<bean class="Constructoeinjection.Certificate" name="ce"> -->
+<!-- 		<constructor-arg value="1" /> -->
+<!-- 		<constructor-arg value="Java" index="1" /> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean class="Constructoeinjection.Student" name="st1"> -->
+<!-- 		<constructor-arg value="1" /> -->
+<!-- 		<constructor-arg value="Kunal" /> -->
+<!-- 		<constructor-arg value="India" /> -->
+<!-- 		<constructor-arg> -->
+<!-- 			<list> -->
+<!-- 				<value>java</value> -->
+<!-- 				<value>python</value> -->
+<!-- 			</list> -->
+<!-- 		</constructor-arg> --></bean>
+
+</beans>
